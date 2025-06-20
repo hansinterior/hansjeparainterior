@@ -1,19 +1,19 @@
-/* --- Umum --- */
+/* Warna dan font elegan */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
+  font-family: 'Georgia', serif;
   background-color: #f8f8f8;
   color: #333;
+  margin: 0;
 }
 
-/* --- Header --- */
+/* Header */
 header {
-  background-color: #222;
+  background-color: #1c1c1c;
   color: white;
-  padding: 20px 40px;
+  padding: 20px 30px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 header img {
@@ -21,46 +21,63 @@ header img {
   border-radius: 8px;
 }
 
-nav {
-  margin-left: auto;
-}
-
 nav a {
   color: white;
+  margin-left: 20px;
   text-decoration: none;
-  margin: 0 15px;
   font-weight: bold;
 }
 
-/* --- Section umum --- */
-section {
-  padding: 40px 20px;
+nav a:hover {
+  color: #d4af37; /* gold */
 }
 
+/* Judul section */
 .section-title {
   text-align: center;
+  font-size: 28px;
   margin-bottom: 30px;
-  font-size: 24px;
 }
 
-/* --- Galeri Produk --- */
+/* Galeri produk */
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .gallery img {
-  width: 300px;
+  width: 280px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
 }
 
-/* --- Footer --- */
-footer {
-  background-color: #222;
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Tombol WhatsApp */
+.button-wa {
+  display: inline-block;
+  background-color: #25d366;
   color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button-wa:hover {
+  background-color: #1ebd5a;
+}
+
+/* Footer */
+footer {
+  background-color: #1c1c1c;
+  color: #aaa;
+  padding: 30px;
   text-align: center;
-  padding: 20px;
 }
